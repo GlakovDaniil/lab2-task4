@@ -1,17 +1,11 @@
 export function higherThan(num) {
-    return function (element, index, array) {
-        return element > num;
-    };
+    return (element) => element > num;
 }
 
 export function hasSubstring(substr) {
-    return function (element, index, array) {
-        return element.includes(substr);
-    };
+    return (element) => element.includes(substr);
 }
 
 export function multiply(num) {
-    return function (x) {
-        return num * x;
-    };
+    return (x) => num * x;
 }
